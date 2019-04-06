@@ -1,3 +1,5 @@
+import os
+clear = lambda: os.system('cls')
 print("                                 LETS    PLAY    TIC   TAC   TOE                         \n")
 print("Note: 1,2,3,4,5,6,7,8,9 are position no.\n")
 while True:
@@ -75,6 +77,7 @@ while True:
                 player_number=1
                 player+=1
                 print()
+                clear()
                 display()
             else:
                 List[pos-1]=player2
@@ -82,6 +85,7 @@ while True:
                 player_number=2
                 player-=1
                 print()
+                clear()
                 display()
         if count>=5:
             if player_number==1:
